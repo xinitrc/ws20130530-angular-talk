@@ -13,11 +13,11 @@ var todoctrl = function ($scope) {
     $scope.addTodo = function () {
         var newTodo = {
             done: false,
-            text: $scope.newTodo
+            text: $scope.todoText
         }
 
         $scope.todos.push(newTodo);
-        $scope.newTodo = '';
+        $scope.todoText = '';
     }
 
     $scope.removeDone = function () {
