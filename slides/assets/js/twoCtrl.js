@@ -1,5 +1,10 @@
 var app = angular.module("Todo");
 
-app.controller ("TwoCtrl", function ($scope) {
+var twoCtrl = function ($scope) {
     $scope.tb3 ="";
-})
+};
+
+twoCtrl.$inject = ['$scope'];
+
+app.controller ("TwoCtrl", twoCtrl);
+

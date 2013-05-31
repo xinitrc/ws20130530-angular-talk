@@ -117,7 +117,7 @@
                     </ul>
                     <div class="block" ng-class="color"></div>
                     <div class="fragmented">
-                    <pre class="fragment" contenteditable>
+                    <pre class="fragment">
                         <code data-trim>
 &lt;html ng-app&gt;
   &vellip;
@@ -142,7 +142,7 @@
                     <input type="text" ng-model="tb1"/>
                     <div>Hallo {{tb1}}</div>
 
-                    <pre class="fragment" contenteditable><code data-trim>
+                    <pre class="fragment"><code data-trim>
 &lt;html ng-app&gt;
   &vellip;
   &lt;input type="text" ng-model="tb"/&gt;
@@ -159,7 +159,7 @@
                          <div ng-show="tb2.length">Hallo {{tb2}}
                     </div>
 
-                    <pre contenteditable><code data-trim>
+                    <pre><code data-trim>
 &lt;html ng-app&gt;
   &vellip;
   &lt;input type="text" ng-model="tb"/&gt;
@@ -282,7 +282,7 @@
                         <div ng-show="tb3.length">Hallo <span ng-model="tb3" contenteditable></span>
                         </div>
 
-                    <pre contenteditable><code data-trim>
+                    <pre><code data-trim>
 &lt;html ng-app&gt;
   &vellip;
   &lt;input type="text" ng-model="tb"/&gt;
@@ -298,9 +298,9 @@
                     <h2>Zweites Beispiel on Steroids</h2>
                     <div>
                         <input type="text" ng-model="tb"/>
-                        <div ng-show="tb.length">Hallo <span ng-model="tb" contenteditable></span>
+                        <div ng-show="tb3.length">Hallo <span ng-model="tb3" contenteditable></span>
                      </div>
-                        <pre contenteditable>
+                        <pre>
                             <code data-trim>
 .directive('contenteditable', function () {
   return {

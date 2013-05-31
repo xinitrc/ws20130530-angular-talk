@@ -1,6 +1,6 @@
 var app = angular.module('Todo');
 
-app.controller("TodoCtrl", function ($scope){
+var todoCtrl = function ($scope){
    $scope.todos = [];
 
    $scope.addTodo = function () {
@@ -27,4 +27,10 @@ app.controller("TodoCtrl", function ($scope){
            }
        })
    }
-});
+};
+
+
+todoCtrl.$inject = ['$scope'];
+
+app.controller("TodoCtrl", todoCtrl);
+
